@@ -2,7 +2,7 @@
 Grafana dashboard for Ceph S3 activity
 
 Dashboard visualisations created using two sets of metrics:
-- Per bucket/per user metrics available since [Ceph Squid 19.2.0 release](https://docs.ceph.com/en/latest/releases/squid/#monitoring)
+- Per bucket/user metrics available since [Ceph Squid 19.2.0 release](https://docs.ceph.com/en/latest/releases/squid/#monitoring)
 - RadosGW metrics exported with [radosgw_usage_exporter](https://github.com/blemmenes/radosgw_usage_exporter) (shoutout to the creators!)
 
 
