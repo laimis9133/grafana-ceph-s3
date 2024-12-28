@@ -17,3 +17,5 @@ A single bucket view is also available using the dropdown menu
 
 Everything can be compared with general cluster activity to identify patterns
 ![Here](https://github.com/laimis9133/grafana-ceph-s3/blob/main/previews/example2.png?raw=true)
+
+Dashboard also uploaded for public use to [GrafanaLabs page here](https://grafana.com/grafana/dashboards/22580-ceph-squid-s3-bucket-metrics/). Enjoy.
