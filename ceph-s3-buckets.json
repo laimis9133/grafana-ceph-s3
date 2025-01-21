@@ -1,4 +1,41 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_THANOS",
+      "label": "Thanos",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__elements": {},
+  "__requires": [
+    {
+      "type": "panel",
+      "id": "gauge",
+      "name": "Gauge",
+      "version": ""
+    },
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "11.1.0"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -19,14 +56,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": 106,
+  "id": null,
   "links": [],
   "liveNow": true,
   "panels": [
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${DS_THANOS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -115,7 +152,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -132,7 +169,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${DS_THANOS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -221,7 +258,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -248,7 +285,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -337,7 +374,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -354,7 +391,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -443,7 +480,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -460,7 +497,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Per minute instead of per second.",
           "fieldConfig": {
@@ -550,7 +587,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -581,7 +618,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -670,7 +707,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -687,7 +724,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -776,7 +813,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -793,7 +830,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -882,7 +919,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -899,7 +936,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -988,7 +1025,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1005,7 +1042,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -1094,7 +1131,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -1113,7 +1150,7 @@
       "type": "row"
     },
     {
-      "collapsed": true,
+      "collapsed": false,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1121,961 +1158,867 @@
         "y": 17
       },
       "id": 90,
-      "panels": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+      "panels": [],
+      "title": "S3 Bucket Volumes",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "Raw, unreplicated.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
           },
-          "description": "Raw, unreplicated.",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 100,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": 1800000,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 0,
-                "pointSize": 1,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": 1800000,
-                "stacking": {
-                  "group": "A",
-                  "mode": "normal"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": null
-                  }
-                ]
-              },
-              "unit": "dectbytes"
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 100,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
             },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 19,
-            "x": 0,
-            "y": 18
-          },
-          "id": 108,
-          "interval": "5m",
-          "options": {
-            "legend": {
-              "calcs": [
-                "last",
-                "diff"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Last",
-              "sortDesc": true
+            "insertNulls": 1800000,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
             },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
+            "lineWidth": 0,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": 1800000,
+            "stacking": {
+              "group": "A",
+              "mode": "normal"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
             }
           },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "radosgw_usage_bucket_bytes{bucket=~\"$bucket\"}/1099511627776",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "S3 Bucket Sizes",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "Actual (raw - thats how much data is generated) and Replicated (thats how much storage is needed for it).",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "thresholds"
-              },
-              "fieldMinMax": true,
-              "mappings": [],
-              "max": 3000,
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "semi-dark-blue",
-                    "value": null
-                  }
-                ]
-              },
-              "unit": "dectbytes"
-            },
-            "overrides": [
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
               {
-                "__systemRef": "hideSeriesFrom",
-                "matcher": {
-                  "id": "byNames",
-                  "options": {
-                    "mode": "exclude",
-                    "names": [
-                      "dp-1"
-                    ],
-                    "prefix": "All except:",
-                    "readOnly": true
-                  }
-                },
-                "properties": []
+                "color": "green",
+                "value": null
               }
             ]
           },
-          "gridPos": {
-            "h": 7,
-            "w": 5,
-            "x": 19,
-            "y": 18
-          },
-          "id": 110,
-          "options": {
-            "minVizHeight": 75,
-            "minVizWidth": 75,
-            "orientation": "auto",
-            "reduceOptions": {
-              "calcs": [
-                "mean"
-              ],
-              "fields": "",
-              "values": false
-            },
-            "showThresholdLabels": false,
-            "showThresholdMarkers": false,
-            "sizing": "auto",
-            "text": {
-              "titleSize": 20,
-              "valueSize": 23
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sum(radosgw_usage_bucket_bytes{bucket=~\"$bucket\"}/1099511627776)",
-              "instant": false,
-              "legendFormat": "Raw",
-              "range": true,
-              "refId": "A"
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "(sum(radosgw_usage_bucket_bytes{bucket=~\"$bucket\"}/1099511627776))*3",
-              "instant": false,
-              "legendFormat": "Replicated",
-              "range": true,
-              "refId": "B"
-            }
-          ],
-          "title": "S3 Storage Usage",
-          "type": "gauge"
+          "unit": "bytes"
         },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 19,
+        "x": 0,
+        "y": 18
+      },
+      "id": 108,
+      "interval": "5m",
+      "options": {
+        "legend": {
+          "calcs": [
+            "last",
+            "diff"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Last",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
-          "description": "The number of objects within S3 buckets, multiply by 1000 to get exact value.",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 98,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": 1800000,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": 1800000,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              }
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 24,
-            "x": 0,
-            "y": 25
-          },
-          "id": 109,
-          "interval": "60s",
-          "options": {
-            "legend": {
-              "calcs": [
-                "last",
-                "mean",
-                "diff"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Difference",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "radosgw_usage_bucket_objects{bucket=~\"$bucket\"}/1000",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "S3 Objects (Thousands)",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "11 - default shards. We recomed for 100k objects per 1 shard for best S3 performance.",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": 900000,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": 900000,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "line"
-                }
-              },
-              "fieldMinMax": false,
-              "links": [],
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "dark-blue",
-                    "value": 11
-                  }
-                ]
-              },
-              "unit": "short"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 24,
-            "x": 0,
-            "y": 32
-          },
-          "id": 112,
-          "options": {
-            "legend": {
-              "calcs": [
-                "last",
-                "diff"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Last",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "9.3.1",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "radosgw_usage_bucket_shards{bucket=~\"$bucket\", bucket!=\"-\"}",
-              "format": "time_series",
-              "intervalFactor": 1,
-              "legendFormat": "{{ bucket }}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "S3 Bucket Shards",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "GET operations",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": true,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 98,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "GB/s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 24,
-            "x": 0,
-            "y": 40
-          },
-          "id": 77,
-          "options": {
-            "legend": {
-              "calcs": [
-                "max",
-                "mean"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_get_obj_bytes{bucket=~\"$bucket\"}[1m]) / 1073741824)",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "Data Read Volume",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "PUT Operations",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": true,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 98,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "GB/s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 24,
-            "x": 0,
-            "y": 47
-          },
-          "id": 81,
-          "options": {
-            "legend": {
-              "calcs": [
-                "max",
-                "mean"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_put_obj_bytes{bucket=~\"$bucket\"}[1m])) / 1073741824",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "Data Write Volume",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "DELETE Operations",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": true,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 98,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "MB/s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 24,
-            "x": 0,
-            "y": 54
-          },
-          "id": 83,
-          "options": {
-            "legend": {
-              "calcs": [
-                "max",
-                "mean"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_del_obj_bytes{bucket=~\"$bucket\"}[1m])) / 1048576",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "Data Delete Volume",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "COPY Operations",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": true,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 98,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "smooth",
-                "lineStyle": {
-                  "fill": "solid"
-                },
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "auto",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "fieldMinMax": false,
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "MB/s"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 7,
-            "w": 24,
-            "x": 0,
-            "y": 61
-          },
-          "id": 84,
-          "options": {
-            "legend": {
-              "calcs": [
-                "max",
-                "mean"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "11.1.0",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "exemplar": false,
-              "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_copy_obj_bytes{bucket=~\"$bucket\"}[1m])) / 1048576",
-              "instant": false,
-              "legendFormat": "{{bucket}}",
-              "range": true,
-              "refId": "A"
-            }
-          ],
-          "title": "Data Copy Volume",
-          "type": "timeseries"
-        },
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "description": "Haproxy 500 responses from data-k8s",
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "never",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "links": [],
-              "mappings": [],
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green"
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "short"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 24,
-            "x": 0,
-            "y": 68
-          },
-          "id": 59,
-          "options": {
-            "legend": {
-              "calcs": [
-                "last"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true
-            },
-            "tooltip": {
-              "mode": "single",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "9.3.1",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "expr": "increase(haproxy_backend_http_responses_total{code=\"5xx\",k8s_cluster=\"data-k8s\"}[2m])",
-              "format": "time_series",
-              "intervalFactor": 1,
-              "legendFormat": "{{ k8s_node_name }}:  {{ k8s_pod_name }}  ",
-              "refId": "A"
-            }
-          ],
-          "title": "S3 Timeouts - Data Platform",
-          "type": "timeseries"
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "radosgw_usage_bucket_bytes{bucket=~\"$bucket\"}",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
         }
       ],
-      "title": "S3 Bucket Volumes",
-      "type": "row"
+      "title": "S3 Bucket Sizes",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "Actual (raw - thats how much data is generated) and Replicated (thats how much storage is needed for it).",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "fieldMinMax": true,
+          "mappings": [],
+          "max": 3000000000000000,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "semi-dark-blue",
+                "value": null
+              }
+            ]
+          },
+          "unit": "bytes"
+        },
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "dp-1"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": []
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 5,
+        "x": 19,
+        "y": 18
+      },
+      "id": 110,
+      "options": {
+        "minVizHeight": 75,
+        "minVizWidth": 75,
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": false,
+        "sizing": "auto",
+        "text": {
+          "titleSize": 20,
+          "valueSize": 23
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum(radosgw_usage_bucket_bytes{bucket=~\"$bucket\"})",
+          "instant": false,
+          "legendFormat": "Raw",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum(radosgw_usage_bucket_bytes{bucket=~\"$bucket\"}) * $replication",
+          "instant": false,
+          "legendFormat": "Replicated",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "S3 Storage Usage",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "The number of objects within S3 buckets, multiply by 1000 to get exact value.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 98,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": 1800000,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": 1800000,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 25
+      },
+      "id": 109,
+      "interval": "60s",
+      "options": {
+        "legend": {
+          "calcs": [
+            "last",
+            "mean",
+            "diff"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Difference",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "radosgw_usage_bucket_objects{bucket=~\"$bucket\"}/1000",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "S3 Objects (Thousands)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "11 - default shards. We recomed for 100k objects per 1 shard for best S3 performance.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": 900000,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": 900000,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "line"
+            }
+          },
+          "fieldMinMax": false,
+          "links": [],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "dark-blue",
+                "value": 11
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 32
+      },
+      "id": 112,
+      "options": {
+        "legend": {
+          "calcs": [
+            "last",
+            "diff"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Last",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "expr": "radosgw_usage_bucket_shards{bucket=~\"$bucket\", bucket!=\"-\"}",
+          "format": "time_series",
+          "intervalFactor": 1,
+          "legendFormat": "{{ bucket }}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "S3 Bucket Shards",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "GET operations",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": true,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 98,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "GB/s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 40
+      },
+      "id": 77,
+      "options": {
+        "legend": {
+          "calcs": [
+            "max",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Mean",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_get_obj_bytes{bucket=~\"$bucket\"}[1m]) / (1024*1024*1024))",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Data Read Volume",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "PUT Operations",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": true,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 98,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "GB/s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 47
+      },
+      "id": 81,
+      "options": {
+        "legend": {
+          "calcs": [
+            "max",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Mean",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_put_obj_bytes{bucket=~\"$bucket\"}[1m])) / (1024*1024*1024)",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Data Write Volume",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "DELETE Operations",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": true,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 98,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "MB/s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 54
+      },
+      "id": 83,
+      "options": {
+        "legend": {
+          "calcs": [
+            "max",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Mean",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_del_obj_bytes{bucket=~\"$bucket\"}[1m])) / (1024*1024)",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Data Delete Volume",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "description": "COPY Operations",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": true,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 98,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "MB/s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 61
+      },
+      "id": 84,
+      "options": {
+        "legend": {
+          "calcs": [
+            "max",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Mean",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "sum by (bucket) (rate(ceph_rgw_op_per_bucket_copy_obj_bytes{bucket=~\"$bucket\"}[1m])) / (1024*1024)",
+          "instant": false,
+          "legendFormat": "{{bucket}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Data Copy Volume",
+      "type": "timeseries"
     },
     {
       "collapsed": true,
@@ -2083,14 +2026,14 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 18
+        "y": 68
       },
       "id": 88,
       "panels": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -2177,7 +2120,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2194,7 +2137,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -2281,7 +2224,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2298,7 +2241,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -2389,7 +2332,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2406,7 +2349,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -2497,7 +2440,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2514,7 +2457,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "Over the last 1min",
           "fieldConfig": {
@@ -2605,7 +2548,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "exemplar": false,
@@ -2629,14 +2572,14 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 19
+        "y": 69
       },
       "id": 93,
       "panels": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -2721,7 +2664,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "increase(ceph_rgw_req{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")\n",
@@ -2738,7 +2681,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "",
           "fieldConfig": {
@@ -2825,7 +2768,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_get_obj_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -2842,7 +2785,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "",
           "fieldConfig": {
@@ -2926,7 +2869,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_put_obj_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -2943,7 +2886,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3027,7 +2970,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_del_obj_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -3044,7 +2987,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3128,7 +3071,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_del_bucket_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -3145,7 +3088,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3229,7 +3172,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_list_obj_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -3246,7 +3189,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3330,7 +3273,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_list_buckets_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -3347,7 +3290,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -3431,7 +3374,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "irate(ceph_rgw_op_copy_obj_ops{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")",
@@ -3444,214 +3387,13 @@
           ],
           "title": "S3 COPY Request Rate (ops/s)",
           "type": "timeseries"
-        }
-      ],
-      "title": "S3 Activity Overview",
-      "type": "row"
-    },
-    {
-      "collapsed": true,
-      "gridPos": {
-        "h": 1,
-        "w": 24,
-        "x": 0,
-        "y": 20
-      },
-      "id": 102,
-      "panels": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
-          },
-          "fieldConfig": {
-            "defaults": {
-              "color": {
-                "mode": "palette-classic"
-              },
-              "custom": {
-                "axisBorderShow": false,
-                "axisCenteredZero": false,
-                "axisColorMode": "text",
-                "axisLabel": "",
-                "axisPlacement": "auto",
-                "barAlignment": 0,
-                "drawStyle": "line",
-                "fillOpacity": 10,
-                "gradientMode": "none",
-                "hideFrom": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": false
-                },
-                "insertNulls": false,
-                "lineInterpolation": "linear",
-                "lineWidth": 1,
-                "pointSize": 5,
-                "scaleDistribution": {
-                  "type": "linear"
-                },
-                "showPoints": "never",
-                "spanNulls": false,
-                "stacking": {
-                  "group": "A",
-                  "mode": "none"
-                },
-                "thresholdsStyle": {
-                  "mode": "off"
-                }
-              },
-              "links": [],
-              "mappings": [],
-              "min": 0,
-              "thresholds": {
-                "mode": "absolute",
-                "steps": [
-                  {
-                    "color": "green",
-                    "value": null
-                  },
-                  {
-                    "color": "red",
-                    "value": 80
-                  }
-                ]
-              },
-              "unit": "pgs"
-            },
-            "overrides": []
-          },
-          "gridPos": {
-            "h": 8,
-            "w": 24,
-            "x": 0,
-            "y": 21
-          },
-          "id": 101,
-          "options": {
-            "legend": {
-              "calcs": [
-                "last",
-                "max",
-                "min",
-                "mean"
-              ],
-              "displayMode": "table",
-              "placement": "right",
-              "showLegend": true,
-              "sortBy": "Max",
-              "sortDesc": true
-            },
-            "tooltip": {
-              "mode": "multi",
-              "sort": "none"
-            }
-          },
-          "pluginVersion": "9.3.1",
-          "targets": [
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "expr": "sum(ceph_pg_scrubbing) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Overall Cluster Scrubs",
-              "metric": "ceph_pg_scrubbing",
-              "refId": "A",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_scrubbing * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.data*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "S3 Data Shallow Scrubs",
-              "metric": "ceph_pg_scrubbing",
-              "range": true,
-              "refId": "B",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_deep * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.data*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "S3 Data Deep Scrubs",
-              "metric": "ceph_pg_deep",
-              "range": true,
-              "refId": "C",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "(sum(ceph_pg_scrubbing * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.meta*\"}) by (pg))+(sum(ceph_pg_deep * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.meta*\"}) by (pg))",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "RadosGW Metadata Scrubs",
-              "metric": "ceph_pg_scrubbing",
-              "range": true,
-              "refId": "D",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "(sum(ceph_pg_scrubbing * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.index*\"}) by (pg))+(sum(ceph_pg_deep * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.index*\"}) by (pg))",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "S3 Index Scrubs",
-              "metric": "ceph_pg_scrubbing",
-              "range": true,
-              "refId": "F",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.non-ec*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.control*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.log*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.root*\"}) by (pg)))",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Other Pool Scrubs",
-              "metric": "ceph_pg_scrubbing",
-              "range": true,
-              "refId": "G",
-              "step": 4
-            }
-          ],
-          "title": "Ceph Scrubs",
-          "type": "timeseries"
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
+          "description": "Expiration and AbortMultipartUploads",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -3691,7 +3433,6 @@
               },
               "links": [],
               "mappings": [],
-              "min": 0,
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
@@ -3704,7 +3445,7 @@
                   }
                 ]
               },
-              "unit": "pgs"
+              "unit": "short"
             },
             "overrides": []
           },
@@ -3712,22 +3453,18 @@
             "h": 8,
             "w": 24,
             "x": 0,
-            "y": 29
+            "y": 135
           },
-          "id": 100,
+          "id": 122,
           "options": {
             "legend": {
               "calcs": [
-                "last",
-                "max",
-                "min",
-                "mean"
+                "mean",
+                "max"
               ],
               "displayMode": "table",
               "placement": "right",
-              "showLegend": true,
-              "sortBy": "Mean",
-              "sortDesc": false
+              "showLegend": true
             },
             "tooltip": {
               "mode": "multi",
@@ -3739,237 +3476,593 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "expr": "sum(ceph_pg_backfilling) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "All Placement Groups",
-              "metric": "ceph_pg_backfilling",
-              "refId": "A",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
-              "expr": "(sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.data*\"}) by (pg))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.index*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.non-ec*\"}) by (pg)))",
+              "expr": "(increase(ceph_rgw_lc_expire_current{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\"))+\n(increase(ceph_rgw_lc_abort_mpu{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\"))",
               "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "S3 Bucket Placement Groups",
-              "metric": "ceph_pg_backfilling",
+              "intervalFactor": 1,
+              "legendFormat": "Rados Gateway: {{ceph_daemon}}",
               "range": true,
-              "refId": "B",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "(sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.meta*\"}))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.control*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.log*\"}) by (pg)))+((sum(ceph_pg_backfilling * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.root*\"}) by (pg)))",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "RadosGW Placement Groups",
-              "metric": "ceph_pg_backfilling",
-              "range": true,
-              "refId": "C",
-              "step": 4
+              "refId": "A"
             }
           ],
-          "title": "Ceph Backfills",
+          "title": "S3 Lifecycle Events (ops/s)",
           "type": "timeseries"
         },
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
               "color": {
-                "mode": "thresholds"
+                "mode": "palette-classic"
               },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 10,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "never",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "links": [],
               "mappings": [],
               "thresholds": {
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "grey"
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
                   }
                 ]
-              }
+              },
+              "unit": "short"
             },
             "overrides": []
           },
           "gridPos": {
-            "h": 4,
+            "h": 8,
             "w": 24,
             "x": 0,
-            "y": 37
+            "y": 143
           },
-          "id": 107,
+          "id": 123,
           "options": {
-            "minVizHeight": 75,
-            "minVizWidth": 75,
-            "orientation": "auto",
-            "reduceOptions": {
+            "legend": {
               "calcs": [
-                "lastNotNull"
+                "mean",
+                "max"
               ],
-              "fields": "",
-              "values": false
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true
             },
-            "showThresholdLabels": false,
-            "showThresholdMarkers": true,
-            "sizing": "auto",
-            "text": {
-              "titleSize": 14
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
             }
           },
-          "pluginVersion": "11.1.0",
+          "pluginVersion": "9.3.1",
           "targets": [
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
-              "expr": "sum(ceph_pg_active) by (pg)",
+              "expr": "increase(ceph_rgw_gc_retire_object{job=\"$job\"}[1m])\n  * on(instance_id) group_left(ceph_daemon) label_join(ceph_rgw_metadata{job=\"$job\"}, \"ceph_daemon\", \"\", \"ceph_daemon\")\n",
               "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Cluster Total PGs",
-              "metric": "ceph_pg_active",
+              "intervalFactor": 1,
+              "legendFormat": "Rados Gateway: {{ceph_daemon}}",
               "range": true,
-              "refId": "A",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.data*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "S3 Data PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "B",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.meta*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Metadata PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "C",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.index*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Index PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "D",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.log*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Log PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "E",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.buckets.non-ec*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Non-EC PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "F",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.control*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Control PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "G",
-              "step": 4
-            },
-            {
-              "datasource": {
-                "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
-              },
-              "editorMode": "code",
-              "expr": "sum(ceph_pg_active * on(pool_id) group_left(name) ceph_pool_metadata{name=~\".*rgw.root*\"}) by (pg)",
-              "format": "time_series",
-              "interval": "$interval",
-              "intervalFactor": 2,
-              "legendFormat": "Root PGs",
-              "metric": "ceph_pg_active",
-              "range": true,
-              "refId": "H",
-              "step": 4
+              "refId": "A"
             }
           ],
-          "title": "Ceph S3 Active Placement Groups (Pools)",
-          "type": "gauge"
+          "title": "S3 Garbage Collection (ops/s)",
+          "type": "timeseries"
         }
       ],
+      "title": "S3 Activity Overview",
+      "type": "row"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 70
+      },
+      "id": 102,
+      "panels": [],
       "title": "Ceph Cluster Activity",
       "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "links": [],
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "pgs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 71
+      },
+      "id": 101,
+      "options": {
+        "legend": {
+          "calcs": [
+            "last",
+            "max",
+            "min",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Max",
+          "sortDesc": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_scrubbing) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "Overall Cluster Scrubs",
+          "metric": "ceph_pg_scrubbing",
+          "refId": "A",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_scrubbing{pool_id=\"34\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Data Shallow Scrubs",
+          "metric": "ceph_pg_scrubbing",
+          "refId": "B",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_deep{pool_id=\"34\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Data Deep Scrubs",
+          "metric": "ceph_pg_deep",
+          "refId": "C",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "(sum(ceph_pg_scrubbing{pool_id=\"32\"}) by (pg))+(sum(ceph_pg_deep{pool_id=\"32\"}) by (pg))",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Metadata Scrubs",
+          "metric": "ceph_pg_scrubbing",
+          "refId": "D",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "(sum(ceph_pg_scrubbing{pool_id=\"33\"}) by (pg))+(sum(ceph_pg_deep{pool_id=\"33\"}) by (pg))",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Index Scrubs",
+          "metric": "ceph_pg_scrubbing",
+          "refId": "F",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "(sum(ceph_pg_scrubbing{pool_id=\"30\"}) by (pg))+(sum(ceph_pg_deep{pool_id=\"30\"}) by (pg))+(sum(ceph_pg_scrubbing{pool_id=\"35\"}) by (pg))+(sum(ceph_pg_deep{pool_id=\"35\"}) by (pg))+(sum(ceph_pg_scrubbing{pool_id=\"31\"}) by (pg))+(sum(ceph_pg_deep{pool_id=\"31\"}) by (pg))",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Other Pool Scrubs",
+          "metric": "ceph_pg_scrubbing",
+          "refId": "G",
+          "step": 4
+        }
+      ],
+      "title": "Ceph Scrubs",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "links": [],
+          "mappings": [],
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "pgs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 79
+      },
+      "id": 100,
+      "options": {
+        "legend": {
+          "calcs": [
+            "last",
+            "max",
+            "min",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Mean",
+          "sortDesc": false
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_backfilling) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "All Placement Groups",
+          "metric": "ceph_pg_backfilling",
+          "refId": "A",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "(sum(ceph_pg_backfilling{pool_id=\"30\"}) by (pg))+(sum(ceph_pg_backfilling{pool_id=\"31\"}) by (pg))+(sum(ceph_pg_backfilling{pool_id=\"32\"}) by (pg))+(sum(ceph_pg_backfilling{pool_id=\"33\"}) by (pg))+(sum(ceph_pg_backfilling{pool_id=\"34\"}) by (pg))+(sum(ceph_pg_backfilling{pool_id=\"35\"}) by (pg))",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Placement Groups",
+          "metric": "ceph_pg_backfilling",
+          "refId": "B",
+          "step": 4
+        }
+      ],
+      "title": "Ceph Backfills",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${DS_THANOS}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "grey",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 87
+      },
+      "id": 107,
+      "options": {
+        "minVizHeight": 75,
+        "minVizWidth": 75,
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "text": {
+          "titleSize": 14
+        }
+      },
+      "pluginVersion": "11.1.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "expr": "sum(ceph_pg_active) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "Cluster Total PGs",
+          "metric": "ceph_pg_active",
+          "range": true,
+          "refId": "A",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "editorMode": "code",
+          "expr": "sum(ceph_pg_active{pool_id=\"34\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Data PGs",
+          "metric": "ceph_pg_active",
+          "range": true,
+          "refId": "B",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_active{pool_id=\"32\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Metadata PGs",
+          "metric": "ceph_pg_active",
+          "refId": "C",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_active{pool_id=\"33\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Index PGs",
+          "metric": "ceph_pg_active",
+          "refId": "D",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_active{pool_id=\"30\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Log PGs",
+          "metric": "ceph_pg_active",
+          "refId": "E",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_active{pool_id=\"35\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Non-EC PGs",
+          "metric": "ceph_pg_active",
+          "refId": "F",
+          "step": 4
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_THANOS}"
+          },
+          "expr": "sum(ceph_pg_active{pool_id=\"31\"}) by (pg)",
+          "format": "time_series",
+          "interval": "$interval",
+          "intervalFactor": 2,
+          "legendFormat": "S3 Control PGs",
+          "metric": "ceph_pg_active",
+          "refId": "G",
+          "step": 4
+        }
+      ],
+      "title": "Ceph S3 Active Placement Groups (Pools)",
+      "type": "gauge"
     },
     {
       "collapsed": true,
@@ -3977,14 +4070,14 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 21
+        "y": 91
       },
       "id": 80,
       "panels": [
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4068,7 +4161,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "1000*sum(increase(ceph_osd_op_r_latency_sum{job=\"$job\"}[1m]))/clamp_min(sum(increase(ceph_osd_op_r_latency_count{job=\"$job\"}[1m])),1)",
               "format": "time_series",
@@ -4082,7 +4175,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "1000*sum(increase(ceph_osd_op_w_latency_sum{job=\"$job\"}[1m]))/clamp_min(sum(increase(ceph_osd_op_w_latency_count{job=\"$job\"}[1m])),1)",
               "format": "time_series",
@@ -4096,7 +4189,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "1000*sum(increase(ceph_osd_op_rw_latency_sum{job=\"$job\"}[1m]))/clamp_min(sum(increase(ceph_osd_op_rw_latency_count{job=\"$job\"}[1m])),1)",
               "format": "time_series",
@@ -4111,7 +4204,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4200,7 +4293,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "ceph_osd_commit_latency_ms{job=\"$job\"}",
               "format": "time_series",
@@ -4215,7 +4308,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4304,7 +4397,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "ceph_osd_apply_latency_ms{job=\"$job\"}",
               "format": "time_series",
@@ -4319,7 +4412,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "fieldConfig": {
             "defaults": {
@@ -4408,7 +4501,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "expr": "rate(ceph_osd_op_r_latency_sum{job=\"$job\"}[1m])",
               "format": "time_series",
@@ -4423,7 +4516,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${DS_THANOS}"
           },
           "description": "A counter to see which disks have been used the most",
           "fieldConfig": {
@@ -4506,7 +4599,7 @@
             {
               "datasource": {
                 "type": "prometheus",
-                "uid": "${DS_PROMETHEUS}"
+                "uid": "${DS_THANOS}"
               },
               "editorMode": "code",
               "expr": "ceph_osd_op{job=\"ceph-cluster\"}",
@@ -4535,40 +4628,17 @@
   "templating": {
     "list": [
       {
-        "current": {
-          "selected": false,
-          "text": "Thanos",
-          "value": "thanos"
-        },
-        "hide": 0,
-        "includeAll": false,
-        "label": "Data Source",
-        "multi": false,
-        "name": "DS_PROMETHEUS",
-        "options": [],
-        "query": "prometheus",
-        "queryValue": "",
-        "refresh": 1,
-        "regex": "",
-        "skipUrlSync": false,
-        "type": "datasource"
-      },
-      {
         "allValue": ".*",
-        "current": {
-          "selected": false,
-          "text": "All",
-          "value": "$__all"
-        },
+        "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${DS_THANOS}"
         },
         "definition": "label_values(ceph_rgw_op_per_bucket_get_obj_ops,bucket)",
         "hide": 0,
         "includeAll": true,
         "label": "Bucket",
-        "multi": false,
+        "multi": true,
         "name": "bucket",
         "options": [],
         "query": {
@@ -4658,14 +4728,10 @@
         "type": "interval"
       },
       {
-        "current": {
-          "selected": false,
-          "text": "ceph-cluster",
-          "value": "ceph-cluster"
-        },
+        "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${DS_THANOS}"
         },
         "definition": "label_values(ceph_mon_quorum_status,job)",
         "hide": 2,
@@ -4680,6 +4746,31 @@
         },
         "refresh": 1,
         "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "type": "query"
+      },
+      {
+        "current": {},
+        "datasource": {
+          "type": "prometheus",
+          "uid": "${DS_THANOS}"
+        },
+        "definition": "label_values(ceph_pool_metadata{name=\"europe-1.rgw.buckets.data\"},description)",
+        "description": "Replication factor for RGW data pool",
+        "hide": 2,
+        "includeAll": false,
+        "label": "replication",
+        "multi": false,
+        "name": "replication",
+        "options": [],
+        "query": {
+          "qryType": 1,
+          "query": "label_values(ceph_pool_metadata{name=\"europe-1.rgw.buckets.data\"},description)",
+          "refId": "PrometheusVariableQueryEditor-VariableQuery"
+        },
+        "refresh": 1,
+        "regex": "(?:replica:)(\\d+)",
         "skipUrlSync": false,
         "sort": 0,
         "type": "query"
